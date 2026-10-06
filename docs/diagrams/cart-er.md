@@ -7,7 +7,7 @@ erDiagram
     Cart {
         bigint id PK
         bigint user FK
-        string session_key IX
+        string session_key "Indexed"
         datetime created_at
         datetime updated_at
     }
@@ -25,7 +25,7 @@ erDiagram
         bigint id PK
         bigint store FK
         bigint variant FK
-        string sku IX
+        string sku "Indexed"
         decimal price
         integer stock
         integer sold_count
@@ -49,11 +49,11 @@ erDiagram
         bigint category FK
         bigint brand FK
         datetime created_at
-        string status IX
+        string status "Indexed"
         bigint default_variant FK
         bigint created_by_store FK
-        string normalized_name IX
-        string normalized_key IX
+        string normalized_name "Indexed"
+        string normalized_key "Indexed"
         json tokens
     }
     Store {

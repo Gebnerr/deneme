@@ -18,7 +18,7 @@ erDiagram
         decimal total_amount
         string currency
         string discount_code_snapshot
-        string status IX
+        string status "Indexed"
         string shipping_full_name
         string shipping_phone
         string shipping_address_line1
@@ -50,9 +50,9 @@ erDiagram
         decimal shipping_amount
         decimal tax_amount
         decimal total_amount
-        string status IX
+        string status "Indexed"
         string cargo_company
-        string cargo_tracking_number IX
+        string cargo_tracking_number "Indexed"
         datetime shipped_at
         datetime delivered_at
         datetime cancelled_at
@@ -81,11 +81,11 @@ erDiagram
     PaymentTransaction {
         bigint id PK
         bigint order FK
-        string provider IX
+        string provider "Indexed"
         string payment_id
         string conversation_id
         string basket_id
-        string status IX
+        string status "Indexed"
         integer fraud_status
         decimal paid_price
         string currency
@@ -114,7 +114,7 @@ erDiagram
     PaymentCustomer {
         bigint id PK
         bigint user FK
-        string provider IX
+        string provider "Indexed"
         string provider_customer_key
         string provider_external_id
         datetime created_at
@@ -135,7 +135,7 @@ erDiagram
         string expire_month
         string expire_year
         boolean is_default
-        boolean is_active IX
+        boolean is_active "Indexed"
         datetime created_at
         datetime updated_at
     }
@@ -165,7 +165,7 @@ erDiagram
         string refund_reference UK
         decimal amount
         string currency
-        string status IX
+        string status "Indexed"
         string reason
         string refund_type
         boolean refund_shipping
@@ -178,8 +178,8 @@ erDiagram
         bigint payment_refund FK
         bigint payment_transaction_item FK
         decimal amount
-        string provider_refund_id IX
-        string status IX
+        string provider_refund_id "Indexed"
+        string status "Indexed"
         string conversation_id UK
         boolean retryable
         string provider_error_code

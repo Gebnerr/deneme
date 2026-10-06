@@ -10,7 +10,7 @@ flowchart LR
     OS[orders/services]
 
     M[Domain Models]
-    DB[(MSSQL)]
+    DB["(MSSQL)"]
 
     IY[iyzico]
     CW[Celery]

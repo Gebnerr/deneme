@@ -28,7 +28,7 @@ erDiagram
         bigint category FK
         string brand_name
         text note
-        string status IX
+        string status "Indexed"
         bigint reviewed_by FK
         datetime reviewed_at
         datetime created_at
@@ -42,11 +42,11 @@ erDiagram
         bigint category FK
         bigint brand FK
         datetime created_at
-        string status IX
+        string status "Indexed"
         bigint default_variant FK
         bigint created_by_store FK
-        string normalized_name IX
-        string normalized_key IX
+        string normalized_name "Indexed"
+        string normalized_key "Indexed"
         json tokens
     }
     Attribute {
@@ -115,7 +115,7 @@ erDiagram
         bigint id PK
         bigint store FK
         bigint variant FK
-        string sku IX
+        string sku "Indexed"
         decimal price
         integer stock
         integer sold_count

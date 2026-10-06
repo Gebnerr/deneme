@@ -18,7 +18,7 @@ erDiagram
         decimal total_amount
         string currency
         string discount_code_snapshot
-        string status IX
+        string status "Indexed"
         string shipping_full_name
         string shipping_phone
         string shipping_address_line1
@@ -50,9 +50,9 @@ erDiagram
         decimal shipping_amount
         decimal tax_amount
         decimal total_amount
-        string status IX
+        string status "Indexed"
         string cargo_company
-        string cargo_tracking_number IX
+        string cargo_tracking_number "Indexed"
         datetime shipped_at
         datetime delivered_at
         datetime cancelled_at
@@ -82,8 +82,8 @@ erDiagram
         bigint id PK
         bigint order_item FK
         integer quantity
-        string status IX
-        datetime expires_at IX
+        string status "Indexed"
+        datetime expires_at "Indexed"
         datetime created_at
         datetime updated_at
     }
@@ -151,7 +151,7 @@ erDiagram
         bigint id PK
         bigint store FK
         bigint variant FK
-        string sku IX
+        string sku "Indexed"
         decimal price
         integer stock
         integer sold_count

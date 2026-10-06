@@ -18,9 +18,9 @@ graph TD
     C --> J[Provider Retrieve / Completion]
     C --> K[_finalize_successful_payment]
 
-    K --> L[PaymentTransaction = SUCCESS]
-    K --> M[StockReservation = CONSUMED]
-    K --> N[Order = PAID]
+    K --> L["PaymentTransaction = SUCCESS"]
+    K --> M["StockReservation = CONSUMED"]
+    K --> N["Order = PAID"]
     K --> O[Cart Cleanup]
 
     P[Card API] --> Q[CardStorageService]

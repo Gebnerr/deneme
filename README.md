@@ -196,7 +196,7 @@ This separation allows multiple stores to sell the same catalog product while ma
 | Microsoft SQL Server | — | Relational database |
 | `mssql-django` | 1.8.0 | Django SQL Server backend |
 | `pyodbc` | 5.2.0 | SQL Server database connectivity |
-| Celery | 5.6.3 | Background task support |
+| Celery | 5.6.3 | Asynchronous/background task infrastructure |
 | iyzico / `iyzipay` | 1.0.46 | Payment provider and marketplace integration |
 | Pillow | 12.2.0 | Image processing |
 | `django-crispy-forms` | 2.4 | Form rendering |

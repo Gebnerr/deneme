@@ -155,8 +155,8 @@ flowchart TD
     DV[ProductDraftVariant]
     PV[ProductVariant]
     SP[StoreProduct]
-    IMG[ProductImageGroup + ProductImage]
-    PUB[ProductDraft = PUBLISHED]
+    IMG["ProductImageGroup + ProductImage"]
+    PUB["ProductDraft = PUBLISHED"]
 
     D --> M
     M --> MATCH
@@ -182,12 +182,12 @@ flowchart TD
 ```mermaid
 flowchart TD
     S[Seller]
-    STEP1[Step 1<br/>Temel bilgiler]
+    STEP1["Step 1<br/>Temel bilgiler"]
     MATCH[Duplicate / Match]
-    STEP2[Step 2<br/>Varyantlar]
-    STEP3[Step 3<br/>Görseller]
-    STEP4[Step 4<br/>Fiyat / Stok / SKU / Barkod]
-    STEP5[Step 5<br/>İnceleme]
+    STEP2["Step 2<br/>Varyantlar"]
+    STEP3["Step 3<br/>Görseller"]
+    STEP4["Step 4<br/>Fiyat / Stok / SKU / Barkod"]
+    STEP5["Step 5<br/>İnceleme"]
     DECISION{Existing Product?}
     EXISTING[Mevcut Product'a katkı]
     NEW[Yeni Product oluştur]

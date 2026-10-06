@@ -32,8 +32,8 @@ sequenceDiagram
 ```mermaid
 flowchart TD
     O[Satın alınabilir teklifler]
-    FILTER[ACTIVE + stock > 0 + aktif variant + aktif product + aktif store]
-    CHEAPEST[Min(price)]
+    FILTER["ACTIVE + stock > 0 + aktif variant + aktif product + aktif store"]
+    CHEAPEST["Min(price)"]
     BUYBOX[Buy Box]
 
     O --> FILTER

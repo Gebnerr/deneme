@@ -8,12 +8,12 @@ graph TD
     VIEW[Cart API Views]
     BASE[BaseCartAPIView]
     SERVICE[CartService]
-    CART[(Cart)]
-    ITEM[(CartItem)]
-    OFFER[(StoreProduct)]
+    CART["(Cart)"]
+    ITEM["(CartItem)"]
+    OFFER["(StoreProduct)"]
     STOCK[StockReservationService]
     ORDER[Order Domain]
-    DB[(Microsoft SQL Server)]
+    DB["(Microsoft SQL Server)"]
 
     CLIENT --> VIEW
     VIEW --> BASE
@@ -70,11 +70,11 @@ erDiagram
 
 ```mermaid
 graph LR
-    SP[StoreProduct.price<br/>Güncel Fiyat]
-    CI[CartItem.last_seen_price<br/>Son Görülen Fiyat]
+    SP["StoreProduct.price<br/>Güncel Fiyat"]
+    CI["CartItem.last_seen_price<br/>Son Görülen Fiyat"]
     CHECK{Değerler farklı mı?}
-    CHANGE[price_changed = True]
-    ACK[mark_price_changes_as_seen()]
+    CHANGE["price_changed = True"]
+    ACK["mark_price_changes_as_seen()"]
 
     SP --> CHECK
     CI --> CHECK

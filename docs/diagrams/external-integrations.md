@@ -7,7 +7,7 @@ flowchart TB
     OS[Order / Payment Services]
     CEL[Celery Worker]
     IY[iyzico]
-    DB[(MSSQL)]
+    DB["(MSSQL)"]
     FILES[Media Files]
 
     WEB --> PS

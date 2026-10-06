@@ -17,7 +17,7 @@ flowchart TB
     CORE[core]
 
     ORM[Django ORM]
-    DB[(Microsoft SQL Server)]
+    DB["(Microsoft SQL Server)"]
     IY[iyzico]
     CEL[Celery Worker]
     MEDIA[Media / File Storage]

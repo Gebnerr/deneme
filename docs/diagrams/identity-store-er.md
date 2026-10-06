@@ -99,7 +99,7 @@ erDiagram
         bigint category FK
         string brand_name
         text note
-        string status IX
+        string status "Indexed"
         bigint reviewed_by FK
         datetime reviewed_at
         datetime created_at

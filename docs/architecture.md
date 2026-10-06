@@ -99,7 +99,7 @@ Satıcı mağaza yaşam döngüsünü ve satıcı operasyon ekranlarını yönet
 - koleksiyonlar
 - ürün soru-cevap
 - taslak yayınlama
-- ürün yayınlama sonrası görsellerin asenkron kopyalanması
+- ürün indeksleme için async görev
 
 ### `cart`
 

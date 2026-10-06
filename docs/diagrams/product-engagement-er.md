@@ -12,11 +12,11 @@ erDiagram
         bigint category FK
         bigint brand FK
         datetime created_at
-        string status IX
+        string status "Indexed"
         bigint default_variant FK
         bigint created_by_store FK
-        string normalized_name IX
-        string normalized_key IX
+        string normalized_name "Indexed"
+        string normalized_key "Indexed"
         json tokens
     }
     AttributeValue {
@@ -49,15 +49,15 @@ erDiagram
         bigint category FK
         bigint brand FK
         text description
-        string normalized_name IX
-        string normalized_key IX
+        string normalized_name "Indexed"
+        string normalized_key "Indexed"
         json tokens
         bigint matched_product FK
-        string match_status IX
+        string match_status "Indexed"
         bigint published_product FK
         smallint last_completed_step
         smallint current_step
-        string status IX
+        string status "Indexed"
         datetime completed_at
         datetime created_at
         datetime updated_at
@@ -65,8 +65,8 @@ erDiagram
     ProductDraftVariant {
         bigint id PK
         bigint draft FK
-        string sku IX
-        string barcode IX
+        string sku "Indexed"
+        string barcode "Indexed"
         decimal price
         integer stock
         boolean is_default
@@ -93,7 +93,7 @@ erDiagram
         integer sort_order
         boolean is_active
         boolean is_main
-        string file_hash IX
+        string file_hash "Indexed"
         datetime created_at
     }
     ProductCollection {
@@ -121,7 +121,7 @@ erDiagram
         bigint id PK
         bigint store FK
         bigint variant FK
-        string sku IX
+        string sku "Indexed"
         decimal price
         integer stock
         integer sold_count
